@@ -2,32 +2,37 @@
 class Notes {
 	public static void main(String[] args) {
 
-		int[] intArray = new int[25];
-		int[] intArray2 = { 1, 4, 6 };
+		//Array (1D Array)
 
-		// 2-D Arrays
+		int[] intArray = new int[25]; //filled with default values
+		int[] intArray2 = { 1, 4, 6 }; //premade one
 
-		int[][] intArray2D = new int[5][10]; // NUMBER OF ROWS, NUMBER OF COLUMNS
+		//2D Array
+
+		int[][] intArray2D = new int[25][10]; //25 rows, 10 columns
 		int[][] intArray2D2 = {
-				{ 1, 3, 5 },
-				{ 2, 4, 6 },
-				{ 3, 5, 6 }
+			{1, 3, 5},
+			{2, 4, 6, 8},
+			{3, 6, 9}
 		};
 
-		// iterating
+		//iterate through 2D array
 
-		// 1-D
-		for (int i = 0; i < intArray2.length; i++) {
-			System.out.println(intArray2[i]);
-		}
-
-		// 2-D
-		for (int i = 0; i < intArray2D2.length; i++) { // i is a row
-			for (int j = 0; j < intArray2D2[i].length; j++) { // j is a column
-				System.out.print(intArray2D2[i][j] + " "); // use print instead of println to keep all columns on the
-															// same row.
+		for (int row = 0; row < intArray2D2.length; row++) { //rows (Arrays)
+			for (int col = 0; col < intArray2D2[row].length; col++) {//cols
+				System.out.print(intArray2D2[row][col] + " "); //columns with a blank space between them
 			}
-			System.out.println(); // go down a line after each row prints
+			//new line at the end of each row
+			System.out.println();
+		}
+		System.out.println();
+		//enhanced loop - designed for reading, not for writing
+
+		for (int row[] : intArray2D2) {
+			for (int col : row) {
+				System.out.print(col + " ");
+			}
+			System.out.println();
 		}
 	}
 }
