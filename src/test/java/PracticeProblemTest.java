@@ -145,7 +145,7 @@ public class PracticeProblemTest {
          //      { 2, 3, -10, 6 } };
          assertEquals(-15, (int) method.invoke(null, new int[][]{ { 1, 3, -4, 6 },
                { 3, -34, 7, 2 },
-               { 2, 3, -10, 6 } };));
+               { 2, 3, -10, 6 } }));
       }
 
       catch (NoSuchMethodException e) {
@@ -163,7 +163,7 @@ public class PracticeProblemTest {
          Class[] cArg = { int[][].class };
          Method method = testClass.getDeclaredMethod("sum2D", cArg);
          // Enter code here
-         Integer[][] arr = { { 0, 0, 0, 0 },
+         int[][] arr = { { 0, 0, 0, 0 },
                { 0, 0, 0, 0 },
                { 0, 0, 0, 0 } };
          assertEquals(0, (int) method.invoke(null, arr));
@@ -184,7 +184,7 @@ public class PracticeProblemTest {
          Class[] cArg = { int[][].class };
          Method method = testClass.getDeclaredMethod("sum2D", cArg);
          // Enter code here
-         Integer[][] arr = { { 1, 3, 4, 6 },
+         int[][] arr = { { 1, 3, 4, 6 },
                { 3, 5, 7, 2 },
                { 2, 3, 5, 6 } };
          assertEquals(47, (int) method.invoke(null, arr));
