@@ -137,7 +137,7 @@ public class PracticeProblemTest {
    void sum2DTest3() {
       Class<?> testClass = PracticeProblem.class;
       try {
-         Class[] cArg = { int[][].class };
+         Class[] cArg = { Integer[][].class };
          Method method = testClass.getDeclaredMethod("sum2D", cArg);
          // Enter code here
          Integer[][] arr = { { 1, 3, -4, 6 },
@@ -158,7 +158,7 @@ public class PracticeProblemTest {
    void sum2Dtest2() {
       Class<?> testClass = PracticeProblem.class;
       try {
-         Class[] cArg = { int[][].class };
+         Class[] cArg = { Integer[][].class };
          Method method = testClass.getDeclaredMethod("sum2D", cArg);
          // Enter code here
          Integer[][] arr = { { 0, 0, 0, 0 },
@@ -179,7 +179,7 @@ public class PracticeProblemTest {
    void Sum2DTest1() {
       Class<?> testClass = PracticeProblem.class;
       try {
-         Class[] cArg = { int[][].class };
+         Class[] cArg = { Integer[][].class };
          Method method = testClass.getDeclaredMethod("sum2D", cArg);
          // Enter code here
          Integer[][] arr = { { 1, 3, 4, 6 },
