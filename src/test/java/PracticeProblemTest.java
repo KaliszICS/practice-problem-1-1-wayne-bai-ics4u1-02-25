@@ -143,7 +143,7 @@ public class PracticeProblemTest {
           int[][] arr = new int[][]{ { 1, 3, -4, 6 },
                { 3, -34, 7, 2 },
                { 2, 3, -10, 6 } };
-         assertEquals(-15, (int) method.invoke(null, new Obj[]{arr}));
+         assertEquals(-15, (int) method.invoke(null, new Object[]{arr}));
       }
 
       catch (NoSuchMethodException e) {
@@ -164,7 +164,7 @@ public class PracticeProblemTest {
          int[][] arr = { { 0, 0, 0, 0 },
                { 0, 0, 0, 0 },
                { 0, 0, 0, 0 } };
-         assertEquals(0, (int) method.invoke(null, new Obj[]{arr}));
+         assertEquals(0, (int) method.invoke(null, new Object[]{arr}));
       }
 
       catch (NoSuchMethodException e) {
@@ -185,7 +185,7 @@ public class PracticeProblemTest {
          int[][] arr = { { 1, 3, 4, 6 },
                { 3, 5, 7, 2 },
                { 2, 3, 5, 6 } };
-         assertEquals(47, (int) method.invoke(null, new Obj[]{arr}));
+         assertEquals(47, (int) method.invoke(null, new Object[]{arr}));
       }
 
       catch (NoSuchMethodException e) {
