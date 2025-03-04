@@ -137,13 +137,15 @@ public class PracticeProblemTest {
    void sum2DTest3() {
       Class<?> testClass = PracticeProblem.class;
       try {
-         Class[] cArg = { Integer[][].class };
+         Class[] cArg = { int[][].class };
          Method method = testClass.getDeclaredMethod("sum2D", cArg);
          // Enter code here
-         Integer[][] arr = { { 1, 3, -4, 6 },
+         // Integer[][] arr = new int[][]{ { 1, 3, -4, 6 },
+         //      { 3, -34, 7, 2 },
+         //      { 2, 3, -10, 6 } };
+         assertEquals(-15, (int) method.invoke(null, new int[][]{ { 1, 3, -4, 6 },
                { 3, -34, 7, 2 },
-               { 2, 3, -10, 6 } };
-         assertEquals(-15, (int) method.invoke(null, arr));
+               { 2, 3, -10, 6 } };));
       }
 
       catch (NoSuchMethodException e) {
@@ -158,7 +160,7 @@ public class PracticeProblemTest {
    void sum2Dtest2() {
       Class<?> testClass = PracticeProblem.class;
       try {
-         Class[] cArg = { Integer[][].class };
+         Class[] cArg = { int[][].class };
          Method method = testClass.getDeclaredMethod("sum2D", cArg);
          // Enter code here
          Integer[][] arr = { { 0, 0, 0, 0 },
@@ -179,7 +181,7 @@ public class PracticeProblemTest {
    void Sum2DTest1() {
       Class<?> testClass = PracticeProblem.class;
       try {
-         Class[] cArg = { Integer[][].class };
+         Class[] cArg = { int[][].class };
          Method method = testClass.getDeclaredMethod("sum2D", cArg);
          // Enter code here
          Integer[][] arr = { { 1, 3, 4, 6 },
