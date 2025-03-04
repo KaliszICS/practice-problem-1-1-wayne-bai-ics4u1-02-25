@@ -145,7 +145,7 @@ public class PracticeProblemTest {
          //      { 2, 3, -10, 6 } };
          assertEquals(-15, (int) method.invoke(null, new int[][]{ { 1, 3, -4, 6 },
                { 3, -34, 7, 2 },
-               { 2, 3, -10, 6 } };));
+               { 2, 3, -10, 6 } }));
       }
 
       catch (NoSuchMethodException e) {
